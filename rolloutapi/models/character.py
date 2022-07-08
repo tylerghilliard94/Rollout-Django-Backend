@@ -1,4 +1,5 @@
 from django.db import models
+import math
 
 
 class Character(models.Model):
@@ -37,3 +38,30 @@ class Character(models.Model):
     @property
     def spell_save_dc(self):
         return 8 + self.proficiency_bonus
+
+    def bonus_calculator(self, attribute):
+        return math.floor(attribute / 2) - 5
+
+    @property
+    def strength_bonus(self):
+        return self.bonus_calculator(self.strength)
+
+    @property
+    def dexterity_bonus(self):
+        return self.bonus_calculator(self.dexterity)
+
+    @property
+    def constitution_bonus(self):
+        return self.bonus_calculator(self.constitution)
+
+    @property
+    def intelligence_bonus(self):
+        return self.bonus_calculator(self.intelligence)
+
+    @property
+    def wisdom_bonus(self):
+        return self.bonus_calculator(self.wisdom)
+
+    @property
+    def charisma_bonus(self):
+        return self.bonus_calculator(self.charisma)
