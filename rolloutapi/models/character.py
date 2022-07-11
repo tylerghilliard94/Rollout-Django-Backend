@@ -8,7 +8,7 @@ class Character(models.Model):
         "CharacterClass", on_delete=models.CASCADE, related_name="characters")
     level = models.IntegerField()
     race = models.ForeignKey(
-        "Race", on_delete=models.CASCADE, related_name="characters")
+        "SubRace", on_delete=models.CASCADE, related_name="characters")
     picture = models.CharField(max_length=100)
     description = models.TextField()
     alignment = models.ForeignKey(
@@ -40,28 +40,29 @@ class Character(models.Model):
         return 8 + self.proficiency_bonus
 
     def bonus_calculator(self, attribute):
+        """Calculates the bonuses for each attribute."""
         return math.floor(attribute / 2) - 5
 
     @property
     def strength_bonus(self):
-        return self.bonus_calculator(self.strength)
+        return self.bonus_calculator(self.strength) + self.race.objects.get(self.race).strength_bonus
 
     @property
     def dexterity_bonus(self):
-        return self.bonus_calculator(self.dexterity)
+        return self.bonus_calculator(self.dexterity) + self.race.objects.get(self.race).dexterity_bonus
 
     @property
     def constitution_bonus(self):
-        return self.bonus_calculator(self.constitution)
+        return self.bonus_calculator(self.constitution) + self.race.objects.get(self.race).constitution_bonus
 
     @property
     def intelligence_bonus(self):
-        return self.bonus_calculator(self.intelligence)
+        return self.bonus_calculator(self.intelligence) + self.race.objects.get(self.race).intelligence_bonus
 
     @property
     def wisdom_bonus(self):
-        return self.bonus_calculator(self.wisdom)
+        return self.bonus_calculator(self.wisdom) + self.race.objects.get(self.race).wisdom_bonus
 
     @property
     def charisma_bonus(self):
-        return self.bonus_calculator(self.charisma)
+        return self.bonus_calculator(self.charisma) + self.race.objects.get(self.race).charisma_bonus
