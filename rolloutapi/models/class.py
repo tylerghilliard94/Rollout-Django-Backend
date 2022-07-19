@@ -6,3 +6,5 @@ class CharacterClass(models.Model):
     description = models.TextField()
     hitdice = models.IntegerField(default=6)
     image = models.CharField(max_length=50)
+    spellcasting_ability = models.ForeignKey(
+        "Attribute", on_delete=models.CASCADE, related_name="character_classes")

@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Item(models.Model):
+class Weapon(models.Model):
     name = models.CharField(max_length=15)
     description = models.TextField()
     cost_gp = models.IntegerField(default=0)

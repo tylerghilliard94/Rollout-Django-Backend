@@ -1,0 +1,65 @@
+[
+    {
+        "model": "rolloutAPI.attribute",
+        "pk": 1,
+        "fields": {
+            "name": "Stength",
+            "abbr_name": "STR",
+            "description": "NA"
+        }
+    },
+    {
+        "model": "rolloutAPI.attribute",
+        "pk": 2,
+        "fields": {
+            "name": "Dexterity",
+            "abbr_name": "DEX",
+            "description": "NA"
+        }
+    },
+    {
+        "model": "rolloutAPI.attribute",
+        "pk": 3,
+        "fields": {
+            "name": "Constitution",
+            "abbr_name": "CON",
+            "description": "NA"
+        }
+    },
+    {
+        "model": "rolloutAPI.attribute",
+        "pk": 4,
+        "fields": {
+            "name": "Intelligence",
+            "abbr_name": "INT",
+            "description": "NA"
+        }
+    },
+    {
+        "model": "rolloutAPI.attribute",
+        "pk": 5,
+        "fields": {
+            "name": "Wisdom",
+            "abbr_name": "WIS",
+            "description": "NA"
+        }
+    },
+    {
+        "model": "rolloutAPI.attribute",
+        "pk": 6,
+        "fields": {
+            "name": "Charisma",
+            "abbr_name": "CHA",
+            "description": "NA"
+        }
+    },
+    {
+        "model": "rolloutAPI.attribute",
+        "pk": 7,
+        "fields": {
+            "name": "None",
+            "abbr_name": "NA",
+            "description": "NA"
+        }
+    }
+]

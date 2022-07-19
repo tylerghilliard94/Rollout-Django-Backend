@@ -1,0 +1,164 @@
+[
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Athletics",
+            "attribute": 1,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Arcana",
+            "attribute": 4,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Investigation",
+            "attribute": 4,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Nature",
+            "attribute": 4,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Religion",
+            "attribute": 4,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "History",
+            "attribute": 4,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Stealth",
+            "attribute": 2,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Sleight of Hand",
+            "attribute": 2,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Acrobatics",
+            "attribute": 2,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Performance",
+            "attribute": 6,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Deception",
+            "attribute": 6,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Intimidation",
+            "attribute": 6,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Persuasion",
+            "attribute": 6,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Insight",
+            "attribute": 5,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Animal Handling",
+            "attribute": 5,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Medicine",
+            "attribute": 5,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Survival",
+            "attribute": 5,
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Perception",
+            "attribute": 5,
+            "description": ""
+        }
+    }
+]

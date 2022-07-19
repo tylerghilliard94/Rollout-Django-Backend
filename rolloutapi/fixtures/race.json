@@ -1,0 +1,322 @@
+[
+    {
+        "model": "rolloutAPI.race",
+        "pk": 1,
+        "fields": {
+            "name": "Dragonborn",
+            "description": "Proud race of humanoids born from the blood of an ancient dragon god."
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 2,
+        "fields": {
+            "name": "Dwarf",
+            "description": "Bold and brash, these people are known for their mining and stonework along with outstanding courage."
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 3,
+        "fields": {
+            "name": "Elf",
+            "description": "Elegant and regal, the Elves are a potent magical race that enjoys the higher things in life."
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 4,
+        "fields": {
+            "name": "Gnome",
+            "description": "A small but fierce race of highly energetic peoples. Highly adept in tinkering and other knowledgable affairs."
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 5,
+        "fields": {
+            "name": "Half-Elf",
+            "description": "Born of a human and an elf the high elves combine the hardiness of humans with the arcane aptitude of the elves."
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 6,
+        "fields": {
+            "name": "Halfling",
+            "description": "A race of timid yet festive folk that are rarely seen on the battlefield. They try to avoid the ire of others."
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 7,
+        "fields": {
+            "name": "Half-Orc",
+            "description": "Born of a human and an orc these folk have an imposing figure with their orcish heritage showing clear."
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 8,
+        "fields": {
+            "name": "Human",
+            "description": "Humans are highly adaptable and ready for any situation. Inventive and ambitious humans can be found all over."
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 9,
+        "fields": {
+            "name": "Tiefling",
+            "description": "Born of a human bloodline, but purple/blue skin and horns making their infernal heritage readily apparent."
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 10,
+        "fields": {
+            "name": "Aarakocra",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 11,
+        "fields": {
+            "name": "Aasimar",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 12,
+        "fields": {
+            "name": "Bugbear",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 13,
+        "fields": {
+            "name": "Centaur",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 14,
+        "fields": {
+            "name": "Changling",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 15,
+        "fields": {
+            "name": "Fairy",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 16,
+        "fields": {
+            "name": "Firbolg",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 17,
+        "fields": {
+            "name": "Genasi",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 18,
+        "fields": {
+            "name": "Gith",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 19,
+        "fields": {
+            "name": "Goblin",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 20,
+        "fields": {
+            "name": "Goliath",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 21,
+        "fields": {
+            "name": "Harengon",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 22,
+        "fields": {
+            "name": "Hobgoblin",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 23,
+        "fields": {
+            "name": "Kalashtar",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 24,
+        "fields": {
+            "name": "Kenku",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 25,
+        "fields": {
+            "name": "Kobold",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 25,
+        "fields": {
+            "name": "Kobold",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 26,
+        "fields": {
+            "name": "Leonin",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 27,
+        "fields": {
+            "name": "Lizardfolk",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 28,
+        "fields": {
+            "name": "Loxodon",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 29,
+        "fields": {
+            "name": "Minotaur",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 30,
+        "fields": {
+            "name": "Orc",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 31,
+        "fields": {
+            "name": "Satyr",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 32,
+        "fields": {
+            "name": "Shifter",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 33,
+        "fields": {
+            "name": "Simic Hybrid",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 34,
+        "fields": {
+            "name": "Tabaxi",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 35,
+        "fields": {
+            "name": "Tortle",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 36,
+        "fields": {
+            "name": "Triton",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 37,
+        "fields": {
+            "name": "Vedalken",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 38,
+        "fields": {
+            "name": "Warforged",
+            "description": ""
+        }
+    },
+    {
+        "model": "rolloutAPI.race",
+        "pk": 39,
+        "fields": {
+            "name": "Yuan-ti Pureblood",
+            "description": ""
+        }
+    }
+]
