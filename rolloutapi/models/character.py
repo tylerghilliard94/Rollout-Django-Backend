@@ -22,7 +22,6 @@ class Character(models.Model):
     charisma = models.IntegerField(default=10)
     proficiency_bonus = models.IntegerField(default=2)
     hitpoints = models.IntegerField(default=8)
-    hitdice = models.IntegerField(default=6)
     skills = models.ManyToManyField("Skills", related_name="characters")
     armor_class = models.IntegerField(default=10)
     speed = models.IntegerField(default=30)
