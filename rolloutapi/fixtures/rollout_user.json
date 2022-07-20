@@ -1,0 +1,11 @@
+[
+    {
+        "model": "rolloutapi.rolloutuser",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "bio": "An avid DnD Player!",
+            "profile_image": ""
+        }
+    }
+]

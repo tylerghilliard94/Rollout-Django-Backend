@@ -1,0 +1,44 @@
+[
+    {
+        "model": "rolloutapi.size",
+        "pk": 1,
+        "fields": {
+            "name": "Tiny"
+        }
+    },
+    {
+        "model": "rolloutapi.size",
+        "pk": 2,
+        "fields": {
+            "name": "Small"
+        }
+    },
+    {
+        "model": "rolloutapi.size",
+        "pk": 3,
+        "fields": {
+            "name": "Medium"
+        }
+    },
+    {
+        "model": "rolloutapi.size",
+        "pk": 4,
+        "fields": {
+            "name": "Large"
+        }
+    },
+    {
+        "model": "rolloutapi.size",
+        "pk": 5,
+        "fields": {
+            "name": "Huge"
+        }
+    },
+    {
+        "model": "rolloutapi.size",
+        "pk": 6,
+        "fields": {
+            "name": "Gargantuan"
+        }
+    }
+]

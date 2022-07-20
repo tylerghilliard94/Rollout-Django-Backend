@@ -3,13 +3,13 @@ import math
 
 
 class Character(models.Model):
-    characterName = models.CharField(max_length=30)
-    characterClass = models.ForeignKey(
+    character_name = models.CharField(max_length=30)
+    character_class = models.ForeignKey(
         "CharacterClass", on_delete=models.CASCADE, related_name="characters")
     level = models.IntegerField()
     race = models.ForeignKey(
         "SubRace", on_delete=models.CASCADE, related_name="characters")
-    picture = models.CharField(max_length=100)
+    image = models.CharField(max_length=100)
     description = models.TextField()
     alignment = models.ForeignKey(
         "Alignment", on_delete=models.CASCADE, related_name="characters")
@@ -20,28 +20,21 @@ class Character(models.Model):
     intelligence = models.IntegerField(default=10)
     wisdom = models.IntegerField(default=10)
     charisma = models.IntegerField(default=10)
-    proficiency_bonus = models.IntegerField(default=2)
-    hitpoints = models.IntegerField(default=8)
-    hitdice = models.IntegerField(default=6)
-    skills = models.ManyToManyField("Skills", related_name="characters")
+    hit_points = models.IntegerField(default=8)
+    temp_hit_points = models.IntegerField(default=0)
+    skills = models.ManyToManyField("Skill", related_name="characters")
     armor_class = models.IntegerField(default=10)
-    speed = models.IntegerField(default=30)
-    languages = models.ManyToManyField("Languages", related_name="characters")
-    spellcasting_ability = models.IntegerField(default=0)
-    user = models.ForeignKey(
+    languages = models.ManyToManyField("Language", related_name="characters")
+    rollout_user = models.ForeignKey(
         "RolloutUser", on_delete=models.CASCADE, related_name="characters")
-
-    @property
-    def spell_attack_bonus(self):
-        return self.spellcasting_ability + self.proficiency_bonus
-
-    @property
-    def spell_save_dc(self):
-        return 8 + self.proficiency_bonus
 
     def bonus_calculator(self, attribute):
         """Calculates the bonuses for each attribute."""
         return math.floor(attribute / 2) - 5
+
+    @property
+    def proficiency_bonus(self):
+        return math.ceil(self.level / 4 + 1)
 
     @property
     def strength_bonus(self):
@@ -66,3 +59,38 @@ class Character(models.Model):
     @property
     def charisma_bonus(self):
         return self.bonus_calculator(self.charisma) + self.race.objects.get(self.race).charisma_bonus
+
+    @property
+    def spell_attack_bonus(self):
+        if self.character_class.all().name == "Barbarian":
+            return 0
+
+        switcher = {
+            "Strength": self.strength_bonus,
+            "Dexterity": self.dexterity_bonus,
+            "Constitution": self.constitution_bonus,
+            "Intelligence": self.intelligence_bonus,
+            "Wisdom": self.wisdom_bonus,
+            "Charisma": self.charisma_bonus
+        }
+
+        key = self.character_class.all().spellcasting_ability.name
+        return switcher.get(key) + self.proficiency_bonus
+
+    @property
+    def spell_save_dc(self):
+        if self.character_class.all().name == "Barbarian":
+            return 0
+
+        switcher = {
+            "Strength": self.strength_bonus,
+            "Dexterity": self.dexterity_bonus,
+            "Constitution": self.constitution_bonus,
+            "Intelligence": self.intelligence_bonus,
+            "Wisdom": self.wisdom_bonus,
+            "Charisma": self.charisma_bonus
+        }
+
+        key = self.character_class.all().spellcasting_ability.name
+
+        return 8 + switcher.get(key) + self.proficiency_bonus
