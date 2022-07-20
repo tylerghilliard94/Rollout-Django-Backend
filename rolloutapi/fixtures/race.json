@@ -1,6 +1,6 @@
 [
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 1,
         "fields": {
             "name": "Dragonborn",
@@ -8,7 +8,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 2,
         "fields": {
             "name": "Dwarf",
@@ -16,7 +16,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 3,
         "fields": {
             "name": "Elf",
@@ -24,7 +24,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 4,
         "fields": {
             "name": "Gnome",
@@ -32,7 +32,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 5,
         "fields": {
             "name": "Half-Elf",
@@ -40,7 +40,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 6,
         "fields": {
             "name": "Halfling",
@@ -48,7 +48,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 7,
         "fields": {
             "name": "Half-Orc",
@@ -56,7 +56,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 8,
         "fields": {
             "name": "Human",
@@ -64,7 +64,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 9,
         "fields": {
             "name": "Tiefling",
@@ -72,7 +72,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 10,
         "fields": {
             "name": "Aarakocra",
@@ -80,7 +80,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 11,
         "fields": {
             "name": "Aasimar",
@@ -88,7 +88,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 12,
         "fields": {
             "name": "Bugbear",
@@ -96,7 +96,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 13,
         "fields": {
             "name": "Centaur",
@@ -104,7 +104,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 14,
         "fields": {
             "name": "Changling",
@@ -112,7 +112,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 15,
         "fields": {
             "name": "Fairy",
@@ -120,7 +120,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 16,
         "fields": {
             "name": "Firbolg",
@@ -128,7 +128,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 17,
         "fields": {
             "name": "Genasi",
@@ -136,7 +136,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 18,
         "fields": {
             "name": "Gith",
@@ -144,7 +144,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 19,
         "fields": {
             "name": "Goblin",
@@ -152,7 +152,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 20,
         "fields": {
             "name": "Goliath",
@@ -160,7 +160,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 21,
         "fields": {
             "name": "Harengon",
@@ -168,7 +168,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 22,
         "fields": {
             "name": "Hobgoblin",
@@ -176,7 +176,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 23,
         "fields": {
             "name": "Kalashtar",
@@ -184,7 +184,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 24,
         "fields": {
             "name": "Kenku",
@@ -192,7 +192,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 25,
         "fields": {
             "name": "Kobold",
@@ -200,7 +200,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 25,
         "fields": {
             "name": "Kobold",
@@ -208,7 +208,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 26,
         "fields": {
             "name": "Leonin",
@@ -216,7 +216,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 27,
         "fields": {
             "name": "Lizardfolk",
@@ -224,7 +224,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 28,
         "fields": {
             "name": "Loxodon",
@@ -232,7 +232,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 29,
         "fields": {
             "name": "Minotaur",
@@ -240,7 +240,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 30,
         "fields": {
             "name": "Orc",
@@ -248,7 +248,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 31,
         "fields": {
             "name": "Satyr",
@@ -256,7 +256,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 32,
         "fields": {
             "name": "Shifter",
@@ -264,7 +264,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 33,
         "fields": {
             "name": "Simic Hybrid",
@@ -272,7 +272,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 34,
         "fields": {
             "name": "Tabaxi",
@@ -280,7 +280,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 35,
         "fields": {
             "name": "Tortle",
@@ -288,7 +288,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 36,
         "fields": {
             "name": "Triton",
@@ -296,7 +296,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 37,
         "fields": {
             "name": "Vedalken",
@@ -304,7 +304,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 38,
         "fields": {
             "name": "Warforged",
@@ -312,7 +312,7 @@
         }
     },
     {
-        "model": "rolloutAPI.race",
+        "model": "rolloutapi.race",
         "pk": 39,
         "fields": {
             "name": "Yuan-ti Pureblood",

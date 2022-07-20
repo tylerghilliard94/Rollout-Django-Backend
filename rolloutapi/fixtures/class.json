@@ -1,132 +1,132 @@
 [
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 1,
         "fields": {
             "name": "Barbarian",
             "description": "A savage berserker focusing their rage into offensive strikes and constitution bolstering manuevers.",
-            "hitDice": 12,
+            "hit_dice": 12,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1596825622/barbarian-logo_wte4dq.png",
             "spellcasting_ability": 7
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 2,
         "fields": {
             "name": "Bard",
             "description": "Charismatic to a point, bards use their silvertongues and musical aptitude to control the battlefield and help their allies.",
-            "hitDice": 8,
+            "hit_dice": 8,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1597455011/Bard-Logo_w2z8tj.png",
             "spellcasting_ability": 6
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 3,
         "fields": {
             "name": "Cleric",
             "description": "A devout follower of their faith that harnesses their dieties energies to help their allies or dispatch their foes.",
-            "hitDice": 8,
+            "hit_dice": 8,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1597455011/Cleric-Logo_u98prn.png",
             "spellcasting_ability": 5
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 4,
         "fields": {
             "name": "Druid",
             "description": "A gifted shapeshifter and practitioner of nature magic. Well rounded and diverse druids can fill just about any party role. ",
-            "hitDice": 8,
+            "hit_dice": 8,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1597455011/Druid-Logo_qsidvz.png",
             "spellcasting_ability": 5
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 5,
         "fields": {
             "name": "Fighter",
             "description": "A master of combat their uses their martial prowess to bolster themselves agaisnt damage or focus their might into tactical strikes.",
-            "hitDice": 10,
+            "hit_dice": 10,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1596945398/Fighter-logo_wmjqmr.png",
             "spellcasting_ability": 4
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 6,
         "fields": {
             "name": "Monk",
             "description": "Skilled in the martial arts and the use of their Ki. Allowing for multiple stikes and evasive manuevers.",
-            "hitDice": 8,
+            "hit_dice": 8,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1596929822/monk-logo_rgqgyq.png",
             "spellcasting_ability": 5
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 7,
         "fields": {
             "name": "Paladin",
             "description": "A warrior of the faith. Take your Oath and use the magical power to aid yourself on your crusade.",
-            "hitDice": 10,
+            "hit_dice": 10,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1597455011/Paladin-Logo_fnbeee.png",
             "spellcasting_ability": 6
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 8,
         "fields": {
             "name": "Ranger",
             "description": "A skilled marksman with extensive knowledge of the wilds. Aid your party at range with a flurry of arrows or an animal companion.",
-            "hitDice": 10,
+            "hit_dice": 10,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1597455011/Ranger-Logo_fx5hh3.png",
             "spellcasting_ability": 5
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 9,
         "fields": {
             "name": "Rogue",
             "description": "A master of stealth that prefers trickery and flanking to head-to-head comabat. Master of sleight of hand and theivery.",
-            "hitDice": 8,
+            "hit_dice": 8,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1597455011/Rogue-Logo_s160v1.png",
             "spellcasting_ability": 4
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 10,
         "fields": {
             "name": "Sorcerer",
             "description": "A sorcerer is attuned to magic through their bloodline. Allowing for a natural aptitude to bend magic to their will.",
-            "hitDice": 6,
+            "hit_dice": 6,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1596776710/Sorcerer-Logo_bp3j1f.png",
             "spellcasting_ability": 6
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 11,
         "fields": {
             "name": "Warlock",
             "description": "A warlock derives their powers their pacts made with Eldritch beings. Masters of control through manipulation and blasts of energy.",
-            "hitDice": 8,
+            "hit_dice": 8,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1596776706/Warlock-Logo-Light_fz9esl.png",
             "spellcasting_ability": 6
         }
     },
     {
-        "model": "rolloutAPI.defaultcharacter",
+        "model": "rolloutapi.characterclass",
         "pk": 12,
         "fields": {
             "name": "Wizard",
             "description": "A wizard is attuned to magic through rigorous study. A master of their craft they learn can cast spells of great magnitude. Highly verstile magic.",
-            "hitDice": 6,
+            "hit_dice": 6,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1597455011/Wizard-Logo_wegm2e.png",
             "spellcasting_ability": 4
         }

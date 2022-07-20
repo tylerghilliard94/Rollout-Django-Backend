@@ -1,6 +1,6 @@
 [
     {
-        "model": "rolloutAPI.money",
+        "model": "rolloutapi.money",
         "pk": 1,
         "fields": {
             "gp": 15,

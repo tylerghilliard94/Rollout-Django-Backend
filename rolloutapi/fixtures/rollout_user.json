@@ -1,19 +1,10 @@
 [
     {
-        "model": "rolloutAPI.rolloutuser",
+        "model": "rolloutapi.rolloutuser",
         "pk": 1,
         "fields": {
             "user": 1,
             "bio": "An avid DnD Player!",
-            "profile_image": ""
-        }
-    },
-    {
-        "model": "rolloutAPI.rolloutuser",
-        "pk": 2,
-        "fields": {
-            "user": 2,
-            "bio": "An avid? DnD Connouseur!",
             "profile_image": ""
         }
     }

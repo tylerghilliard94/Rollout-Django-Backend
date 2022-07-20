@@ -1,55 +1,55 @@
 [
     {
-        "model": "rolloutAPI.magicschool",
+        "model": "rolloutapi.magicschool",
         "pk": 1,
         "fields": {
             "name": "Abjuration"
         }
     },
     {
-        "model": "rolloutAPI.magicschool",
+        "model": "rolloutapi.magicschool",
         "pk": 2,
         "fields": {
             "name": "Conjuration"
         }
     },
     {
-        "model": "rolloutAPI.magicschool",
+        "model": "rolloutapi.magicschool",
         "pk": 3,
         "fields": {
             "name": "Divination"
         }
     },
     {
-        "model": "rolloutAPI.magicschool",
+        "model": "rolloutapi.magicschool",
         "pk": 4,
         "fields": {
             "name": "Enchantment"
         }
     },
     {
-        "model": "rolloutAPI.magicschool",
+        "model": "rolloutapi.magicschool",
         "pk": 5,
         "fields": {
             "name": "Evocation"
         }
     },
     {
-        "model": "rolloutAPI.magicschool",
+        "model": "rolloutapi.magicschool",
         "pk": 6,
         "fields": {
             "name": "Illusion"
         }
     },
     {
-        "model": "rolloutAPI.magicschool",
+        "model": "rolloutapi.magicschool",
         "pk": 7,
         "fields": {
             "name": "Necromancy"
         }
     },
     {
-        "model": "rolloutAPI.magicschool",
+        "model": "rolloutapi.magicschool",
         "pk": 8,
         "fields": {
             "name": "Transmutation"

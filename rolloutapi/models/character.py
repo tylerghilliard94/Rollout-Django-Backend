@@ -9,7 +9,7 @@ class Character(models.Model):
     level = models.IntegerField()
     race = models.ForeignKey(
         "SubRace", on_delete=models.CASCADE, related_name="characters")
-    picture = models.CharField(max_length=100)
+    image = models.CharField(max_length=100)
     description = models.TextField()
     alignment = models.ForeignKey(
         "Alignment", on_delete=models.CASCADE, related_name="characters")
@@ -20,18 +20,21 @@ class Character(models.Model):
     intelligence = models.IntegerField(default=10)
     wisdom = models.IntegerField(default=10)
     charisma = models.IntegerField(default=10)
-    proficiency_bonus = models.IntegerField(default=2)
     hit_points = models.IntegerField(default=8)
     temp_hit_points = models.IntegerField(default=0)
-    skills = models.ManyToManyField("Skills", related_name="characters")
+    skills = models.ManyToManyField("Skill", related_name="characters")
     armor_class = models.IntegerField(default=10)
-    languages = models.ManyToManyField("Languages", related_name="characters")
+    languages = models.ManyToManyField("Language", related_name="characters")
     rollout_user = models.ForeignKey(
         "RolloutUser", on_delete=models.CASCADE, related_name="characters")
 
     def bonus_calculator(self, attribute):
         """Calculates the bonuses for each attribute."""
         return math.floor(attribute / 2) - 5
+
+    @property
+    def proficiency_bonus(self):
+        return math.ceil(self.level / 4 + 1)
 
     @property
     def strength_bonus(self):

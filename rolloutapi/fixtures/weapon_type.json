@@ -1,0 +1,23 @@
+[
+    {
+        "model": "rolloutapi.weapontype",
+        "pk": 1,
+        "fields": {
+            "name": "Simple"
+        }
+    },
+    {
+        "model": "rolloutapi.weapontype",
+        "pk": 2,
+        "fields": {
+            "name": "Martial"
+        }
+    },
+    {
+        "model": "rolloutapi.weapontype",
+        "pk": 3,
+        "fields": {
+            "name": "Magical"
+        }
+    }
+]

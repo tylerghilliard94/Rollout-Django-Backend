@@ -1,6 +1,6 @@
 [
     {
-        "model": "rolloutAPI.character",
+        "model": "rolloutapi.character",
         "pk": 1,
         "fields": {
             "rollout_user": 1,
@@ -8,7 +8,7 @@
             "character_class": 1,
             "level": 1,
             "race": 6,
-            "picture": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1596825622/barbarian-logo_wte4dq.png",
+            "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1596825622/barbarian-logo_wte4dq.png",
             "description": "A brutal aspiring dragon slayer.",
             "alignment": 6,
             "experience": 0,
@@ -18,14 +18,12 @@
             "intelligence": 20,
             "wisdom": 15,
             "charisma": 20,
-            "proficiency_bonus": 2,
             "hit_points": 10,
             "skills": [
                 1,
                 4,
                 6
             ],
-            "armor_class": 10,
             "languages": [
                 1,
                 2

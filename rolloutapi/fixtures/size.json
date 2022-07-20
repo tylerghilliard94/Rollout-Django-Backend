@@ -1,41 +1,41 @@
 [
     {
-        "model": "rolloutAPI.size",
+        "model": "rolloutapi.size",
         "pk": 1,
         "fields": {
             "name": "Tiny"
         }
     },
     {
-        "model": "rolloutAPI.size",
+        "model": "rolloutapi.size",
         "pk": 2,
         "fields": {
             "name": "Small"
         }
     },
     {
-        "model": "rolloutAPI.size",
+        "model": "rolloutapi.size",
         "pk": 3,
         "fields": {
             "name": "Medium"
         }
     },
     {
-        "model": "rolloutAPI.size",
+        "model": "rolloutapi.size",
         "pk": 4,
         "fields": {
             "name": "Large"
         }
     },
     {
-        "model": "rolloutAPI.size",
+        "model": "rolloutapi.size",
         "pk": 5,
         "fields": {
             "name": "Huge"
         }
     },
     {
-        "model": "rolloutAPI.size",
+        "model": "rolloutapi.size",
         "pk": 6,
         "fields": {
             "name": "Gargantuan"

@@ -1,6 +1,6 @@
 [
     {
-        "model": "rolloutAPI.language",
+        "model": "rolloutapi.language",
         "pk": 1,
         "fields": {
             "name": "Abyssal",
@@ -8,7 +8,7 @@
         }
     },
     {
-        "model": "rolloutAPI.language",
+        "model": "rolloutapi.language",
         "pk": 2,
         "fields": {
             "name": "Celestial",
@@ -16,7 +16,7 @@
         }
     },
     {
-        "model": "rolloutAPI.language",
+        "model": "rolloutapi.language",
         "pk": 3,
         "fields": {
             "name": "Common",
@@ -24,7 +24,7 @@
         }
     },
     {
-        "model": "rolloutAPI.language",
+        "model": "rolloutapi.language",
         "pk": 4,
         "fields": {
             "name": "Draconic",
@@ -32,7 +32,7 @@
         }
     },
     {
-        "model": "rolloutAPI.language",
+        "model": "rolloutapi.language",
         "pk": 5,
         "fields": {
             "name": "Dwarvish",
@@ -40,7 +40,7 @@
         }
     },
     {
-        "model": "rolloutAPI.language",
+        "model": "rolloutapi.language",
         "pk": 6,
         "fields": {
             "name": "Elvish",
@@ -48,7 +48,7 @@
         }
     },
     {
-        "model": "rolloutAPI.language",
+        "model": "rolloutapi.language",
         "pk": 7,
         "fields": {
             "name": "Goblin",
@@ -56,7 +56,7 @@
         }
     },
     {
-        "model": "rolloutAPI.language",
+        "model": "rolloutapi.language",
         "pk": 8,
         "fields": {
             "name": "Infernal",
@@ -64,7 +64,7 @@
         }
     },
     {
-        "model": "rolloutAPI.language",
+        "model": "rolloutapi.language",
         "pk": 9,
         "fields": {
             "name": "Orcish",
