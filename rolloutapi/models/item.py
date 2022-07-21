@@ -8,5 +8,4 @@ class Item(models.Model):
     cost_sp = models.IntegerField(default=0)
     cost_cp = models.IntegerField(default=0)
     weight = models.IntegerField(default=1)
-    quantity = models.IntegerField(default=0)
     custom = models.BooleanField(default=False)

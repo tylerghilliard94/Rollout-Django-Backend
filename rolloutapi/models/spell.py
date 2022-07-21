@@ -17,3 +17,5 @@ class Spell(models.Model):
         "MagicSchool", on_delete=models.CASCADE, related_name="spells")
     damage_type = models.ForeignKey(
         "DamageType", on_delete=models.CASCADE, related_name="spells")
+    classes = models.ManyToManyField("CharacterClass", related_name="spells")
+    custom = models.BooleanField(default=False)
