@@ -1,0 +1,106 @@
+[
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 1,
+        "fields": {
+            "type": "Acid",
+            "description": "The corrosive spray of a black dragon's breath and the dissolving enzymes secreted by a black pudding deal acid damage."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 2,
+        "fields": {
+            "type": "Bludgeoning",
+            "description": "Blunt force attacks, falling, constriction, and the like deal bludgeoning damage."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 3,
+        "fields": {
+            "type": "Cold",
+            "description": "The infernal chill radiating from an ice devil's spear and the frigid blast of a white dragon's breath deal cold damage."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 4,
+        "fields": {
+            "type": "Fire",
+            "description": "Red dragons breathe fire, and many spells conjure flames to deal fire damage."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 5,
+        "fields": {
+            "type": "Force",
+            "description": "Force is pure magical energy focused into a damaging form. Most effects that deal force damage are spells, including magic missile and spiritual weapon."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 6,
+        "fields": {
+            "type": "Lightning",
+            "description": "A lightning bolt spell and a blue dragon's breath deal lightning damage."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 7,
+        "fields": {
+            "type": "Necrotic",
+            "description": "Necrotic damage, dealt by certain undead and a spell such as chill touch, withers matter and even the soul."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 8,
+        "fields": {
+            "type": "Piercing",
+            "description": "Puncturing and impaling attacks, including spears and monsters' bites, deal piercing damage."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 9,
+        "fields": {
+            "type": "Poison",
+            "description": "Venomous stings and the toxic gas of a green dragon's breath deal poison damage."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 10,
+        "fields": {
+            "type": "Psychic",
+            "description": "Mental abilities such as a psionic blast deal psychic damage."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 11,
+        "fields": {
+            "type": "Radiant",
+            "description": "Radiant damage, dealt by a cleric's flame strike spell or an angel's smiting weapon, sears the flesh like fire and overloads the spirit with power."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 12,
+        "fields": {
+            "type": "Slashing",
+            "description": "Swords, axes, and monsters' claws deal slashing damage."
+        }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 13,
+        "fields": {
+            "type": "Thunder",
+            "description": "A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage."
+        }
+    }
+]

@@ -14,6 +14,8 @@ class WeaponView(ViewSet):
     def list(self, request):
         """Handle get requests for multiple weapons"""
 
+        weapons = Weapon.objects.all()
+
     @action(methods=["get"], detail=False)
     def hit_dnd_5e_api(self, request):
         weapons = [{

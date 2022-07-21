@@ -18,12 +18,14 @@ from django.urls import path
 from rest_framework import routers
 from django.conf.urls import include
 from rolloutapi.views import (WeaponView,
-                              DamageTypeView)
+                              DamageTypeView,
+                              ArmorView)
 
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'weapons', WeaponView, 'weapon')
 router.register(r'damage-types', DamageTypeView, 'damage-type')
+router.register(r'armor', ArmorView, 'armor')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
