@@ -102,5 +102,13 @@
             "type": "Thunder",
             "description": "A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage."
         }
+    },
+    {
+        "model": "rolloutapi.damagetype",
+        "pk": 14,
+        "fields": {
+            "type": "NA",
+            "description": "NA"
+        }
     }
 ]

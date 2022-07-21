@@ -3,11 +3,13 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from rolloutapi.models import DamageType
 from rest_framework.decorators import action
 import requests
+from rolloutapi.models import Item
 
 
-class DamageTypeView(ViewSet):
+class ItemView(ViewSet):
     def list(self, request):
         """Handle get requests for multiple weapons"""
+
+        armor = Item.objects.all()
