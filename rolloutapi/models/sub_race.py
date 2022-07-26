@@ -12,7 +12,8 @@ class SubRace(models.Model):
     intelligence_bonus = models.IntegerField()
     wisdom_bonus = models.IntegerField()
     charisma_bonus = models.IntegerField()
-    size = models.CharField(max_length=10)
+    size = models.ForeignKey(
+        "Size", on_delete=models.CASCADE, related_name="sub_races")
     able_to_choose_1 = models.BooleanField(default=False)
     choosable_stat_num_1 = models.IntegerField()
     able_to_choose_2 = models.BooleanField(default=False)

@@ -5,7 +5,7 @@
         "fields": {
             "rollout_user": 1,
             "character_name": "Grom Wyrmbane",
-            "character_class": 1,
+            "character_class": 5,
             "level": 1,
             "race": 6,
             "image": "http://res.cloudinary.com/dgllrw1m3/image/upload/v1596825622/barbarian-logo_wte4dq.png",
@@ -15,7 +15,7 @@
             "strength": 19,
             "dexterity": 17,
             "constitution": 8,
-            "intelligence": 20,
+            "intelligence": 13,
             "wisdom": 15,
             "charisma": 20,
             "hit_points": 10,
