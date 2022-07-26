@@ -6,6 +6,7 @@ from .character import Character
 from .character_class import CharacterClass
 from .damage_type import DamageType
 from .default_character import DefaultCharacter
+from .feat import Feat
 from .friend import Friend
 from .item import Item
 from .language import Language

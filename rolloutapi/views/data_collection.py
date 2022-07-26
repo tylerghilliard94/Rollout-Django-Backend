@@ -8,6 +8,7 @@ from rest_framework.decorators import action
 import requests
 from rolloutapi.api_data import weapons, armor, items
 from rolloutapi.models.character_class import CharacterClass
+from rolloutapi.models.feat import Feat
 
 
 class DataCollectionView(ViewSet):
@@ -25,6 +26,8 @@ class DataCollectionView(ViewSet):
                 type=response_obj["name"],
                 description=response_obj["desc"][0]
             )
+
+        return Response(None, status=status.HTTP_200_OK)
 
     @action(methods=["get"], detail=False)
     def weapons(self, request):
@@ -54,6 +57,8 @@ class DataCollectionView(ViewSet):
 
             )
 
+        return Response(None, status=status.HTTP_200_OK)
+
     @action(methods=["get"], detail=False)
     def armor(self, request):
         Armor.objects.all().delete()
@@ -74,6 +79,8 @@ class DataCollectionView(ViewSet):
 
             )
 
+        return Response(None, status=status.HTTP_200_OK)
+
     @action(methods=["get"], detail=False)
     def items(self, request):
         Item.objects.all().delete()
@@ -91,6 +98,7 @@ class DataCollectionView(ViewSet):
                 custom=False
 
             )
+        return Response(None, status=status.HTTP_200_OK)
 
     @action(methods=["get"], detail=False)
     def spells(self, request):
@@ -148,3 +156,34 @@ class DataCollectionView(ViewSet):
             for class_dict in response["classes"]:
                 spell_obj.classes.add(
                     CharacterClass.objects.get(name=class_dict["name"]))
+
+        return Response(None, status=status.HTTP_200_OK)
+
+    @action(methods=["get"], detail=False)
+    def feats(self, request):
+        Feat.objects.all().delete()
+
+        feats = requests.get('https://www.dnd5eapi.co/api/features').json()
+
+        for feat in feats["results"]:
+
+            description = ""
+
+            response = requests.get(
+                f'https://www.dnd5eapi.co{feat["url"]}').json()
+
+            for desc in response["desc"]:
+                description += f" {desc}"
+
+            feat_obj = Feat.objects.create(
+                name=response["name"],
+                description=description if "desc" in response else "",
+                level=response["level"],
+                custom=False
+
+            )
+
+            feat_obj.classes.add(
+                CharacterClass.objects.get(name=response["class"]["name"]))
+
+        return Response(None, status=status.HTTP_200_OK)

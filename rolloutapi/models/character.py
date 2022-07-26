@@ -38,31 +38,31 @@ class Character(models.Model):
 
     @property
     def strength_bonus(self):
-        return self.bonus_calculator(self.strength) + self.race.objects.get(self.race).strength_bonus
+        return self.bonus_calculator(self.strength + self.race.strength_bonus)
 
     @property
     def dexterity_bonus(self):
-        return self.bonus_calculator(self.dexterity) + self.race.objects.get(self.race).dexterity_bonus
+        return self.bonus_calculator(self.dexterity + self.race.dexterity_bonus)
 
     @property
     def constitution_bonus(self):
-        return self.bonus_calculator(self.constitution) + self.race.objects.get(self.race).constitution_bonus
+        return self.bonus_calculator(self.constitution + self.race.constitution_bonus)
 
     @property
     def intelligence_bonus(self):
-        return self.bonus_calculator(self.intelligence) + self.race.objects.get(self.race).intelligence_bonus
+        return self.bonus_calculator(self.intelligence + self.race.intelligence_bonus)
 
     @property
     def wisdom_bonus(self):
-        return self.bonus_calculator(self.wisdom) + self.race.objects.get(self.race).wisdom_bonus
+        return self.bonus_calculator(self.wisdom + self.race.wisdom_bonus)
 
     @property
     def charisma_bonus(self):
-        return self.bonus_calculator(self.charisma) + self.race.objects.get(self.race).charisma_bonus
+        return self.bonus_calculator(self.charisma + self.race.charisma_bonus)
 
     @property
     def spell_attack_bonus(self):
-        if self.character_class.all().name == "Barbarian":
+        if self.character_class.name == "Barbarian":
             return 0
 
         switcher = {
@@ -74,12 +74,12 @@ class Character(models.Model):
             "Charisma": self.charisma_bonus
         }
 
-        key = self.character_class.all().spellcasting_ability.name
+        key = self.character_class.spellcasting_ability.name
         return switcher.get(key) + self.proficiency_bonus
 
     @property
     def spell_save_dc(self):
-        if self.character_class.all().name == "Barbarian":
+        if self.character_class.name == "Barbarian":
             return 0
 
         switcher = {
@@ -91,6 +91,6 @@ class Character(models.Model):
             "Charisma": self.charisma_bonus
         }
 
-        key = self.character_class.all().spellcasting_ability.name
+        key = self.character_class.spellcasting_ability.name
 
         return 8 + switcher.get(key) + self.proficiency_bonus
