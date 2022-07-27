@@ -9,7 +9,7 @@ from rest_framework.decorators import action
 import requests
 from rolloutapi.models import Character
 from rolloutapi.models.feat import Feat
-from rolloutapi.serializers import CharacterSerializer
+from rolloutapi.serializers import CharacterSerializer, MultipleCharacterSerializer
 
 
 class CharacterView(ViewSet):
@@ -18,6 +18,15 @@ class CharacterView(ViewSet):
 
         characters = Character.objects.all()
 
-        serializer = CharacterSerializer(characters, many=True)
+        serializer = MultipleCharacterSerializer(characters, many=True)
+
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    def retrieve(self, request, pk):
+        """Handle get requests for multiple weapons"""
+
+        characters = Character.objects.get(pk=pk)
+
+        serializer = CharacterSerializer(characters)
 
         return Response(serializer.data, status=status.HTTP_200_OK)

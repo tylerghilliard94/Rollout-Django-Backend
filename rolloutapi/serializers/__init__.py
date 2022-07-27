@@ -2,6 +2,7 @@ from .alignment import AlignmentSerializer
 from .armor import ArmorSerializer
 from .attribute import AttributeSerializer
 from .character import CharacterSerializer
+from .character import MultipleCharacterSerializer
 from .character_class import CharacterClassSerializer
 from .damage_type import DamageTypeSerializer
 from .default_character import DefaultCharacterSerializer

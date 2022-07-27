@@ -27,3 +27,15 @@ class CharacterSerializer(serializers.ModelSerializer):
                   "intelligence", "wisdom", "charisma", "hit_points", "skills", "armor_class", "languages",
                   "proficiency_bonus", "strength_bonus", "dexterity_bonus", "constitution_bonus", "intelligence_bonus",
                   "wisdom_bonus", "charisma_bonus", "spell_attack_bonus", "spell_save_dc", "feats", "spells")
+
+
+class MultipleCharacterSerializer(serializers.ModelSerializer):
+
+    rollout_user = RolloutUserSerializer()
+    character_class = CharacterClassSerializer()
+    race = SubRaceSerializer()
+
+    class Meta:
+        model = Character
+        fields = ("id", "rollout_user", "character_name", "character_class", "level", "race",
+                  "image")
