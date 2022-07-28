@@ -2,35 +2,35 @@
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
-from rest_framework import serializers, status
-from rest_framework.decorators import action
-from rolloutapi.serializers import ArmorSerializer, MultiArmorSerializer
-import requests
-from rolloutapi.models import Armor
+from rest_framework import status
+from rolloutapi.models import Spell
+from rolloutapi.serializers import SpellSerializer, MultiSpellSerializer
 
 
-class ArmorView(ViewSet):
+from rolloutapi.serializers import MultiWeaponSerializer, WeaponSerializer
+
+
+class SpellView(ViewSet):
     def list(self, request):
-        """Handle get requests for multiple armor pieces, serialize said objects
+        """Handle get requests for multiple spells, serialize said objects
 
         Returns:
         Serialized dictionaries in a list back to the client and a response of 200"""
 
-        armor = Armor.objects.all()
-
-        serializer = MultiArmorSerializer(armor, many=True)
+        spells = Spell.objects.all()
+        serializer = MultiSpellSerializer(spells, many=True)
 
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def retrieve(self, request, pk):
-        """Handle get requests for single armor pieces, serialize said object
+        """Handle get requests for a single spell, serialize said object
 
         Returns:
         Serialized dictionary to the client and a response of 200
         """
 
-        armor = Armor.objects.get(pk=pk)
+        spell = Spell.objects.get(pk=pk)
 
-        serializer = ArmorSerializer(armor)
+        serializer = SpellSerializer(spell)
 
         return Response(serializer.data, status=status.HTTP_200_OK)

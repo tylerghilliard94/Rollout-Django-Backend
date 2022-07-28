@@ -20,3 +20,14 @@ class DefaultCharacterSerializer(serializers.ModelSerializer):
         fields = ("id", "character_name", "description", "character_class", "level", "race",
                   "image", "alignment", "experience", "strength", "dexterity", "constitution",
                   "intelligence", "wisdom", "charisma", "hit_points", "skills", "armor_class", "languages")
+
+
+class MultiDefaultCharacterSerializer(serializers.ModelSerializer):
+
+    character_class = CharacterClassSerializer()
+    race = SubRaceSerializer()
+
+    class Meta:
+        model = DefaultCharacter
+        fields = ("id", "character_name", "description", "character_class",  "race",
+                  "image")

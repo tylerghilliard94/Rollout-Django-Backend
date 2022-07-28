@@ -5,3 +5,4 @@ from .data_collection import DataCollectionView
 from .item import ItemView
 from .default_characters import DefaultCharacterView
 from .character import CharacterView
+from .spell import SpellView
