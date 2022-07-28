@@ -3,6 +3,7 @@ from .alignment import Alignment
 from .armor import Armor
 from .attribute import Attribute
 from .character import Character
+from .character_item import CharacterItem
 from .character_class import CharacterClass
 from .damage_type import DamageType
 from .default_character import DefaultCharacter

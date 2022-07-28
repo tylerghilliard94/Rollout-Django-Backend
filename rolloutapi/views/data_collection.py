@@ -15,6 +15,11 @@ class DataCollectionView(ViewSet):
 
     @action(methods=["get"], detail=False)
     def damage_types(self, request):
+        """Skims data off DND5E api and constructs DamageType objects to be inserted into my own db
+
+        Returns:
+            None with a status of 200
+        """
         DamageType.objects.all().delete()
         response = requests.get(
             f'https://www.dnd5eapi.co/api/damage-types').json()
@@ -31,6 +36,11 @@ class DataCollectionView(ViewSet):
 
     @action(methods=["get"], detail=False)
     def weapons(self, request):
+        """Skims data off DND5E api and constructs Weapon objects to be inserted into my own db
+
+        Returns:
+            None with a status of 200
+        """
         Weapon.objects.all().delete()
         for weapon in weapons:
 
@@ -61,6 +71,11 @@ class DataCollectionView(ViewSet):
 
     @action(methods=["get"], detail=False)
     def armor(self, request):
+        """Skims data off DND5E api and constructs Armor objects to be inserted into my own db
+
+        Returns:
+            None with a status of 200
+        """
         Armor.objects.all().delete()
         for piece in armor:
 
@@ -83,6 +98,11 @@ class DataCollectionView(ViewSet):
 
     @action(methods=["get"], detail=False)
     def items(self, request):
+        """Skims data off DND5E api and constructs Item objects to be inserted into my own db
+
+        Returns:
+            None with a status of 200
+        """
         Item.objects.all().delete()
 
         for piece in items:
@@ -102,6 +122,11 @@ class DataCollectionView(ViewSet):
 
     @action(methods=["get"], detail=False)
     def spells(self, request):
+        """Skims data off DND5E api and constructs Spell objects to be inserted into my own db
+
+        Returns:
+            None with a status of 200
+        """
         Spell.objects.all().delete()
 
         spells = requests.get('https://www.dnd5eapi.co/api/spells').json()
@@ -140,6 +165,7 @@ class DataCollectionView(ViewSet):
                 name=response["name"],
                 description=description if "desc" in response else "",
                 range=response["range"],
+                duration=response["duration"],
                 school=magic_school,
                 damage_type=damage_type,
                 concentration=response["concentration"],
@@ -161,6 +187,11 @@ class DataCollectionView(ViewSet):
 
     @action(methods=["get"], detail=False)
     def feats(self, request):
+        """Skims data off DND5E api and constructs Feat objects to be inserted into my own db
+
+        Returns:
+            None with a status of 200
+        """
         Feat.objects.all().delete()
 
         feats = requests.get('https://www.dnd5eapi.co/api/features').json()

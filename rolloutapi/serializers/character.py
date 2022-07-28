@@ -29,7 +29,7 @@ class CharacterSerializer(serializers.ModelSerializer):
                   "wisdom_bonus", "charisma_bonus", "spell_attack_bonus", "spell_save_dc", "feats", "spells")
 
 
-class MultipleCharacterSerializer(serializers.ModelSerializer):
+class MultiCharacterSerializer(serializers.ModelSerializer):
 
     rollout_user = RolloutUserSerializer()
     character_class = CharacterClassSerializer()

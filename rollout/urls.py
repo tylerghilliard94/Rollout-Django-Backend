@@ -22,15 +22,16 @@ from rolloutapi.views import (WeaponView,
                               ArmorView,
                               DataCollectionView,
                               ItemView,
-                              CharacterView)
+                              CharacterView, SpellView)
 from rolloutapi.views.default_characters import DefaultCharacterView
 
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'weapons', WeaponView, 'weapon')
+router.register(r'spells', SpellView, 'spell')
 router.register(r'damage-types', DamageTypeView, 'damage-type')
 router.register(r'armor', ArmorView, 'armor')
-router.register(r'item', ItemView, 'item')
+router.register(r'items', ItemView, 'item')
 router.register(r'default-characters',
                 DefaultCharacterView, 'default-character')
 router.register(r'characters',
