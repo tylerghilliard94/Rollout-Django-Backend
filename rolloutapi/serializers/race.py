@@ -6,4 +6,4 @@ class RaceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Race
-        fields = ("id",  "description")
+        fields = ("id", "name",  "description")

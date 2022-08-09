@@ -9,3 +9,6 @@ class Item(models.Model):
     cost_cp = models.IntegerField(default=0)
     weight = models.IntegerField(default=1)
     custom = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name

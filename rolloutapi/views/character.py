@@ -38,3 +38,22 @@ class CharacterView(ViewSet):
         serializer = CharacterSerializer(character)
 
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+    def delete(self, request, pk):
+
+        Character.objects.get(pk=pk).delete()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
+    @action(methods=["get"], detail=False)
+    def current_user_characters(self, request):
+        characters = Character.objects.filter(
+            rollout_user__user=request.auth.user)
+        serializer = MultiCharacterSerializer(characters, many=True)
+        return Response(serializer.data)
+
+    @action(methods=["get"], detail=True)
+    def characters_by_user_id(self, request, pk):
+        characters = Character.objects.filter(rollout_user__user_id=pk)
+        serializer = MultiCharacterSerializer(characters, many=True)
+        return Response(serializer.data)

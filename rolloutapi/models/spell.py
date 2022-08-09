@@ -20,3 +20,6 @@ class Spell(models.Model):
     classes = models.ManyToManyField("CharacterClass", related_name="spells")
     characters = models.ManyToManyField("Character", related_name="spells")
     custom = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name

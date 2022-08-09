@@ -28,6 +28,9 @@ class Character(models.Model):
     rollout_user = models.ForeignKey(
         "RolloutUser", on_delete=models.CASCADE, related_name="characters")
 
+    def __str__(self):
+        return self.character_name
+
     def bonus_calculator(self, attribute):
         """Calculates the bonuses for each attribute."""
         return math.floor(attribute / 2) - 5

@@ -21,3 +21,6 @@ class SubRace(models.Model):
     flight_capable = models.BooleanField(default=False)
     speed = models.IntegerField(default=30)
     flight_speed = models.IntegerField(default=30)
+
+    def __str__(self):
+        return self.name
