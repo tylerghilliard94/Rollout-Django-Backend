@@ -8,3 +8,6 @@ class Feat(models.Model):
     classes = models.ManyToManyField("CharacterClass", related_name="feats")
     characters = models.ManyToManyField("Character", related_name="feats")
     custom = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name

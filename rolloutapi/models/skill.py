@@ -6,3 +6,6 @@ class Skill(models.Model):
     description = models.TextField()
     attribute = models.ForeignKey(
         "Attribute", on_delete=models.CASCADE, related_name="skills")
+
+    def __str__(self):
+        return self.name

@@ -12,3 +12,6 @@ class Armor(models.Model):
     stealth_disadvantage = models.BooleanField(default=False)
     weight = models.IntegerField(default=1)
     custom = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name

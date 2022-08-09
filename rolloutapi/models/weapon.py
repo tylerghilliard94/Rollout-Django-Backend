@@ -18,3 +18,6 @@ class Weapon(models.Model):
     two_handed_damage = models.CharField(max_length=5)
     ranged = models.BooleanField(default=False)
     custom = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name

@@ -24,3 +24,6 @@ class DefaultCharacter(models.Model):
     armor_class = models.IntegerField(default=10)
     languages = models.ManyToManyField(
         "Language", related_name="default_characters")
+
+    def __str__(self):
+        return self.character_name

@@ -8,3 +8,6 @@ class CharacterClass(models.Model):
     image = models.CharField(max_length=100)
     spellcasting_ability = models.ForeignKey(
         "Attribute", on_delete=models.CASCADE, related_name="character_classes")
+
+    def __str__(self):
+        return self.name
