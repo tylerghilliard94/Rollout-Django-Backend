@@ -6,10 +6,9 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import action
-import requests
-from rolloutapi.models import Character
-from rolloutapi.models.feat import Feat
-from rolloutapi.serializers import CharacterSerializer, MultiCharacterSerializer
+from django.core.exceptions import ValidationError
+from rolloutapi.models import Character, SubRace, RolloutUser, Alignment, CharacterClass
+from rolloutapi.serializers import CharacterSerializer, MultiCharacterSerializer, CreateCharacterSerializer
 
 
 class CharacterView(ViewSet):
@@ -39,7 +38,58 @@ class CharacterView(ViewSet):
 
         return Response(serializer.data, status=status.HTTP_200_OK)
 
+    def create(self, request):
+        """Handle post requests for characters and validates incoming data
+
+        Returns:
+        Serialized dictionary to the client and a response of 201
+        """
+
+        character_class = CharacterClass.objects.get(
+            pk=request.data["character_class"])
+        race = SubRace.objects.get(pk=request.data["race"])
+        alignment = Alignment.objects.get(pk=request.data["alignment"])
+        rollout_user = RolloutUser.objects.get(user=request.auth.user)
+        serializer = CreateCharacterSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        character = serializer.save(race=race, alignment=alignment,
+                                    rollout_user=rollout_user,
+                                    character_class=character_class)
+
+        character.skills.add(*request.data["skills"])
+        character.languages.add(*request.data["languages"])
+
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+    def update(self, request, pk):
+        """Handle put requests for characters and validates incoming data
+
+        Returns:
+        None to the client and a response of 204
+        """
+        character = Character.objects.get(pk=pk)
+        character_class = CharacterClass.objects.get(
+            pk=request.data["character_class"])
+        race = SubRace.objects.get(pk=request.data["race"])
+        alignment = Alignment.objects.get(pk=request.data["alignment"])
+        rollout_user = RolloutUser.objects.get(user=request.auth.user)
+        serializer = CreateCharacterSerializer(character, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        character = serializer.save(race=race, alignment=alignment,
+                                    rollout_user=rollout_user,
+                                    character_class=character_class)
+
+        character.skills.add(*request.data["skills"])
+        character.languages.add(*request.data["languages"])
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
     def delete(self, request, pk):
+        """Handle delete quests for characters.
+
+        Returns:
+        None and a response of 204
+        """
 
         Character.objects.get(pk=pk).delete()
 

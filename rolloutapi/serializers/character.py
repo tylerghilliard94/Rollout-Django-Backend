@@ -39,3 +39,10 @@ class MultiCharacterSerializer(serializers.ModelSerializer):
         model = Character
         fields = ("id", "rollout_user", "character_name", "character_class", "level", "race",
                   "image")
+
+
+class CreateCharacterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Character
+        fields = ("character_name", "level", "image", "description", "experience",
+                  "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma", "hit_points")

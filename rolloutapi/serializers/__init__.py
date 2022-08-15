@@ -1,7 +1,7 @@
 from .alignment import AlignmentSerializer
 from .armor import ArmorSerializer, MultiArmorSerializer
 from .attribute import AttributeSerializer
-from .character import CharacterSerializer, MultiCharacterSerializer
+from .character import CharacterSerializer, MultiCharacterSerializer, CreateCharacterSerializer
 from .character_class import CharacterClassSerializer
 from .damage_type import DamageTypeSerializer
 from .default_character import DefaultCharacterSerializer, MultiDefaultCharacterSerializer
