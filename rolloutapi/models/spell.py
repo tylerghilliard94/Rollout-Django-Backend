@@ -2,6 +2,9 @@ from django.db import models
 
 
 class Spell(models.Model):
+    """Data model for the spell resource
+
+        """
     name = models.CharField(max_length=15)
     description = models.TextField()
     range = models.CharField(max_length=8)
