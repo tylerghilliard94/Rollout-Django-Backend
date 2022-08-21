@@ -3,6 +3,16 @@ import math
 
 
 class Character(models.Model):
+    """Data model for the character resource
+
+    Methods: bonus_calculator, calculate_level
+
+    Custom properties: level_by_experience, proficiency bonus, strength_bonus, dexterity_bonus,
+    constitution_bonus, intelligence_bonus, wisdom_bonus, charisma_bonus, spell_attack_bonus, spell_save_dc
+
+    Related Names: spells, money, weapons, character_items, feats
+
+        """
     character_name = models.CharField(max_length=30)
     character_class = models.ForeignKey(
         "CharacterClass", on_delete=models.CASCADE, related_name="characters")

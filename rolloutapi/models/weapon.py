@@ -2,6 +2,9 @@ from django.db import models
 
 
 class Weapon(models.Model):
+    """Data model for the weapon resource
+
+        """
     name = models.CharField(max_length=15)
     description = models.TextField()
     cost_gp = models.IntegerField(default=0)
@@ -18,6 +21,7 @@ class Weapon(models.Model):
     two_handed_damage = models.CharField(max_length=5)
     ranged = models.BooleanField(default=False)
     custom = models.BooleanField(default=False)
+    characters = models.ManyToManyField("Character", related_name="weapons")
 
     def __str__(self):
         return self.name

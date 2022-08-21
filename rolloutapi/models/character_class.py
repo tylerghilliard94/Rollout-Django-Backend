@@ -2,6 +2,11 @@ from django.db import models
 
 
 class CharacterClass(models.Model):
+    """Data model for the character resource
+
+    Related Names: characters, default_characters, feats, spells
+
+        """
     name = models.CharField(max_length=15)
     description = models.TextField()
     hit_dice = models.IntegerField(default=6)

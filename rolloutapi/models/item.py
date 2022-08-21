@@ -2,6 +2,11 @@ from django.db import models
 
 
 class Item(models.Model):
+    """Data model for the item resource
+
+    Related Names: character_items
+
+        """
     name = models.CharField(max_length=15)
     description = models.TextField()
     cost_gp = models.IntegerField(default=0)

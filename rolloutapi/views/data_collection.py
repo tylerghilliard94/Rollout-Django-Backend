@@ -18,7 +18,7 @@ class DataCollectionView(ViewSet):
         """Skims data off DND5E api and constructs DamageType objects to be inserted into my own db
 
         Returns:
-            None with a status of 200
+            None with a status of 204
         """
         DamageType.objects.all().delete()
         response = requests.get(
@@ -32,14 +32,14 @@ class DataCollectionView(ViewSet):
                 description=response_obj["desc"][0]
             )
 
-        return Response(None, status=status.HTTP_200_OK)
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     @action(methods=["get"], detail=False)
     def weapons(self, request):
         """Skims data off DND5E api and constructs Weapon objects to be inserted into my own db
 
         Returns:
-            None with a status of 200
+            None with a status of 204
         """
         Weapon.objects.all().delete()
         for weapon in weapons:
@@ -67,14 +67,14 @@ class DataCollectionView(ViewSet):
 
             )
 
-        return Response(None, status=status.HTTP_200_OK)
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     @action(methods=["get"], detail=False)
     def armor(self, request):
         """Skims data off DND5E api and constructs Armor objects to be inserted into my own db
 
         Returns:
-            None with a status of 200
+            None with a status of 204
         """
         Armor.objects.all().delete()
         for piece in armor:
@@ -94,14 +94,14 @@ class DataCollectionView(ViewSet):
 
             )
 
-        return Response(None, status=status.HTTP_200_OK)
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     @action(methods=["get"], detail=False)
     def items(self, request):
         """Skims data off DND5E api and constructs Item objects to be inserted into my own db
 
         Returns:
-            None with a status of 200
+            None with a status of 204
         """
         Item.objects.all().delete()
 
@@ -118,14 +118,14 @@ class DataCollectionView(ViewSet):
                 custom=False
 
             )
-        return Response(None, status=status.HTTP_200_OK)
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     @action(methods=["get"], detail=False)
     def spells(self, request):
         """Skims data off DND5E api and constructs Spell objects to be inserted into my own db
 
         Returns:
-            None with a status of 200
+            None with a status of 204
         """
         Spell.objects.all().delete()
 
@@ -183,14 +183,14 @@ class DataCollectionView(ViewSet):
                 spell_obj.classes.add(
                     CharacterClass.objects.get(name=class_dict["name"]))
 
-        return Response(None, status=status.HTTP_200_OK)
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     @action(methods=["get"], detail=False)
     def feats(self, request):
         """Skims data off DND5E api and constructs Feat objects to be inserted into my own db
 
         Returns:
-            None with a status of 200
+            None with a status of 204
         """
         Feat.objects.all().delete()
 
@@ -217,4 +217,4 @@ class DataCollectionView(ViewSet):
             feat_obj.classes.add(
                 CharacterClass.objects.get(name=response["class"]["name"]))
 
-        return Response(None, status=status.HTTP_200_OK)
+        return Response(None, status=status.HTTP_204_NO_CONTENT)

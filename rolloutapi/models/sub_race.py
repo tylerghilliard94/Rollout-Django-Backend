@@ -2,6 +2,11 @@ from django.db import models
 
 
 class SubRace(models.Model):
+    """Data model for the subRace resource
+
+    Related Names: characters, default_characters
+
+        """
     name = models.CharField(max_length=15)
     description = models.TextField()
     base_race = models.ForeignKey(

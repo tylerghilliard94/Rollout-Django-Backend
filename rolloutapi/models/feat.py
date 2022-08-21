@@ -2,6 +2,11 @@ from django.db import models
 
 
 class Feat(models.Model):
+    """Data model for the feat resource
+
+    Related Names: characters, character_classes
+
+        """
     name = models.CharField(max_length=15)
     description = models.TextField()
     level = models.IntegerField(default=1)

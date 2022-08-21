@@ -2,6 +2,9 @@ from django.db import models
 
 
 class DefaultCharacter(models.Model):
+    """Data model for the defaultCharacter resource
+
+        """
     character_name = models.CharField(max_length=30)
     character_class = models.ForeignKey(
         "CharacterClass", on_delete=models.CASCADE, related_name="default_characters")
